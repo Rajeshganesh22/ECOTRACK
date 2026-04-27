@@ -6,9 +6,11 @@ const fs = require("fs");
 const https = require("https");
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+app.use(cors({
+  origin: process.env.CORS_ORIGIN || "*",
+}));
 app.use(express.json());
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
@@ -160,6 +162,15 @@ app.get("/api/leaderboard", (req, res) => {
   const db = readDB();
   res.json(db.users.filter(u => u.role === "citizen").map(({ password, ...u }) => u).sort((a, b) => b.points - a.points));
 });
+
+// ─── SERVE REACT BUILD ────────────────────────────────────────────────────────
+const frontendBuild = path.join(__dirname, "..", "frontend", "build");
+if (fs.existsSync(frontendBuild)) {
+  app.use(express.static(frontendBuild));
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(frontendBuild, "index.html"));
+  });
+}
 
 app.listen(PORT, () => {
   console.log(`🌿 EcoTrack running on http://localhost:${PORT}`);

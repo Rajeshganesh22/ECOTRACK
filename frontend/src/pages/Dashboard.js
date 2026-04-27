@@ -6,7 +6,7 @@ function IssueCard({ issue, onVote }) {
   const sevClass = issue.severity === "High" ? "badge-high" : issue.severity === "Medium" ? "badge-medium" : "badge-low";
   return (
     <div className="issue-card">
-      {issue.image && <img src={`http://localhost:5000${issue.image}`} alt="issue" className="issue-image" />}
+      {issue.image && <img src={issue.image} alt="issue" className="issue-image" />}
       <div className="issue-header">
         <span className="issue-title">{issue.title}</span>
       </div>
