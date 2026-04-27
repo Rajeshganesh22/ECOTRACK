@@ -1,0 +1,103 @@
+{
+  "users": [
+    {
+      "id": "k7ov8t3dmod2c5hx",
+      "name": "Ravi Kumar",
+      "email": "ravi@eco.com",
+      "password": "pass123",
+      "role": "citizen",
+      "points": 120,
+      "createdAt": "2026-04-24T15:26:12.693Z"
+    },
+    {
+      "id": "lugtiueemod2c5hy",
+      "name": "Meena S",
+      "email": "meena@eco.com",
+      "password": "pass123",
+      "role": "citizen",
+      "points": 85,
+      "createdAt": "2026-04-24T15:26:12.694Z"
+    },
+    {
+      "id": "muyf2wp4mod2c5hy",
+      "name": "Admin User",
+      "email": "admin@eco.com",
+      "password": "admin123",
+      "role": "authority",
+      "points": 0,
+      "createdAt": "2026-04-24T15:26:12.694Z"
+    },
+    {
+      "id": "kqibgz5cmod2ev93",
+      "name": "Rajeshganesh S",
+      "email": "rajeshganesh.s.2024.aiml@rajalakshmi.edu.in",
+      "password": "222006",
+      "role": "citizen",
+      "points": 0,
+      "createdAt": "2026-04-24T15:28:19.383Z"
+    },
+    {
+      "id": "hwhs0iztmogpau9h",
+      "name": "Sanjay GP",
+      "email": "sanjay.gp.2024.aiml@rajalakshmi.edu.in",
+      "password": "311020006",
+      "role": "citizen",
+      "points": 0,
+      "createdAt": "2026-04-27T04:32:21.173Z"
+    }
+  ],
+  "issues": [
+    {
+      "id": "lgmtwnwlmod2c5hy",
+      "title": "Illegal Dumping at River Bank",
+      "description": "Large pile of construction waste dumped near the riverbank.",
+      "type": "Illegal Dumping",
+      "severity": "High",
+      "status": "Reported",
+      "location": "Anna Nagar, Chennai",
+      "reporter": "Ravi Kumar",
+      "votes": 12,
+      "image": null,
+      "createdAt": "2026-04-22T15:26:12.694Z"
+    },
+    {
+      "id": "c7swcuvxmod2c5hy",
+      "title": "Polluted Drain Near School",
+      "description": "Open drain overflowing with sewage near Government School.",
+      "type": "Water Pollution",
+      "severity": "High",
+      "status": "In Progress",
+      "location": "Tambaram, Chennai",
+      "reporter": "Meena S",
+      "votes": 8,
+      "image": null,
+      "createdAt": "2026-04-23T15:26:12.694Z"
+    },
+    {
+      "id": "85r3dl2imod2c5hy",
+      "title": "Burning Plastic Waste",
+      "description": "Residents burning plastic near residential area.",
+      "type": "Air Pollution",
+      "severity": "Medium",
+      "status": "Resolved",
+      "location": "Velachery, Chennai",
+      "reporter": "Ravi Kumar",
+      "votes": 5,
+      "image": null,
+      "createdAt": "2026-04-19T15:26:12.694Z"
+    },
+    {
+      "id": "v03sdpfxmod2c5hy",
+      "title": "Garbage Overflow at Market",
+      "description": "Municipality bins overflowing at the weekly market for 3 days.",
+      "type": "Waste Management",
+      "severity": "Medium",
+      "status": "Reported",
+      "location": "T.Nagar, Chennai",
+      "reporter": "Meena S",
+      "votes": 19,
+      "image": null,
+      "createdAt": "2026-04-24T10:26:12.694Z"
+    }
+  ]
+}
